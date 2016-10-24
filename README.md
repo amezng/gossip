@@ -1,2 +1,2 @@
 # akka-chat
-Chat application implemented in akka toolkit, using websocket.
+Chat app built using play framework, akka and websocket.
