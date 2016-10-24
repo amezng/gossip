@@ -1,0 +1,353 @@
+.sidebar-nav h4 {
+    color: #b4b3b3;
+    font-weight: bold;
+    margin: 15px 20px;
+}
+
+.btn-more {
+    color: #7f7c8a;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+.logo{
+ text-align:center;
+}
+.share {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 100px;
+    left:40px;
+
+}
+.social {
+    display: inline-block;
+    padding: 4px;
+}
+
+.btn-more:hover {
+    color: #4f4867;
+}
+.reply{
+color:#EEE;
+}
+.chat-panel {
+    background-color: #FFF;
+}
+.media-heading{
+	font-weight: bold;
+}
+#chat-intro-list {
+    padding: 0px;
+    position: relative;
+    margin-top: 60px;
+    border-right: 1px solid #e2e4f1;
+}
+
+nav.navbar-nst-brand {
+    left: 250px;
+    background-color: #FFF;
+    height: 60px;
+    border-bottom: 1px solid #e2e4f1;
+}
+
+.row-post {
+    background-color: #FFF;
+}
+
+#chat-intro-list .chat-intro {
+    margin: 0px -15px;
+    padding: 20px 15px;
+    border-bottom: 1px solid #e5e2e2;
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#chat-intro-list .active {
+    -moz-box-shadow: 0 8px 50px -8px #cccdd1, 0 -8px 50px -8px #cccdd1;
+    -webkit-box-shadow: 0 8px 50px -8px #cccdd1, 0 -8px 50px -8px #cccdd1;
+    box-shadow: 0 8px 50px -8px #cccdd1, 0 -8px 50px -8px #cccdd1;
+    background: #FFF;
+}
+
+.navbar-nst-brand .col-group-meta {
+    border-right: 1px solid #EEE;
+}
+
+.group-meta {
+    padding: 10px 10px;
+    font-weight: bold;
+}
+
+.group-meta> .media-left {
+    display: inline;
+}
+
+.group-meta> .media-body {
+    display: inline-block;
+}
+
+.group-meta> .media-right {
+    display: inline;
+    position: absolute;
+    right: 30px;
+    line-height: 2.4;
+    font-size: 18px;
+}
+
+.chat-list {
+    padding: 0 15px;
+    overflow-y: scroll;
+}
+
+.group-meta .media-heading {
+    font-weight: bold;
+    line-height: 1.8;
+}
+.chat-intro h4{
+  font-weight: bold;
+}
+.chat-intro p{
+  color:#6b6b6b;
+}
+
+/**
+* Main Post Detail design
+*/
+
+.main-post {
+    position: relative;
+}
+
+.main-post .media-heading {
+    line-height: 3;
+    color: #999;
+}
+
+.main-post .fa {
+    font-size: 14px;
+}
+
+.main-post .media-right {
+    color: #999;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 12px;
+}
+
+.chat-question {
+    position: relative;
+}
+
+.chat-question> span {
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    height: 40px;
+    right: 10px;
+    color: #999;
+    cursor: pointer;
+    font-size: 26px;
+    width: 40px;
+}
+
+.chat-question> span:hover {
+    border-radius: 4px;
+    background-color: #eee;
+}
+
+.main-post-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tag-post {
+    background-color: transparent;
+    padding: 5px 10px;
+    color: #7d7d7d;
+    border: 2px solid #CCC;
+    border-radius: 4px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.tag-post:hover{
+
+    color: #000;
+    border: 2px solid #f1685b;
+    border-radius: 4px;
+}
+
+.tag-container {
+    margin-top: 10px;
+}
+
+
+/**
+*  CSS for Code snippet
+*/
+
+pre {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/**
+* Beautify the scroll for the chat
+*/
+
+.scroll-wrapper {
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: relative;
+}
+
+.scroll-wrapper> .scroll-content {
+    border: none !important;
+    box-sizing: content-box !important;
+    height: auto;
+    left: 0;
+    margin: 0;
+    max-height: none;
+    max-width: none !important;
+    overflow: scroll !important;
+    position: relative !important;
+    top: 0;
+    width: auto !important;
+}
+
+.scroll-wrapper> .scroll-content::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+.scroll-element {
+    display: none;
+}
+
+.scroll-element, .scroll-element div {
+    box-sizing: content-box;
+}
+
+.scroll-element.scroll-x.scroll-scrollx_visible, .scroll-element.scroll-y.scroll-scrolly_visible {
+    display: block;
+}
+
+.scroll-element .scroll-bar, .scroll-element .scroll-arrow {
+    cursor: default;
+}
+
+.scroll-textarea {
+    border: 1px solid #cccccc;
+    border-top-color: #999999;
+}
+
+.scroll-textarea> .scroll-content {
+    overflow: hidden !important;
+}
+
+.scroll-textarea> .scroll-content> textarea {
+    border: none !important;
+    box-sizing: border-box;
+    height: 100% !important;
+    margin: 0;
+    max-height: none !important;
+    max-width: none !important;
+    overflow: scroll !important;
+    outline: none;
+    padding: 2px;
+    position: relative !important;
+    top: 0;
+    width: 100% !important;
+}
+
+.scroll-textarea> .scroll-content> textarea::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+.scroll-me> .scroll-element, .scroll-me> .scroll-element div {
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.scroll-me> .scroll-element div {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.scroll-me> .scroll-element.scroll-x {
+    bottom: 2px;
+    height: 8px;
+    left: 0;
+    width: 100%;
+}
+
+.scroll-me> .scroll-element.scroll-y {
+    height: 100%;
+    right: 2px;
+    top: 0;
+    width: 8px;
+}
+
+.scroll-me> .scroll-element .scroll-element_outer {
+    overflow: hidden;
+}
+
+.scroll-me> .scroll-element .scroll-element_outer, .scroll-me> .scroll-element .scroll-element_track, .scroll-me> .scroll-element .scroll-bar {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.scroll-me> .scroll-element .scroll-element_track, .scroll-me> .scroll-element .scroll-bar {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+}
+
+.scroll-me> .scroll-element .scroll-element_track {
+    background-color: #e0e0e0;
+}
+
+.scroll-me> .scroll-element .scroll-bar {
+    background-color: #444;
+}
+
+.scroll-me> .scroll-element:hover .scroll-bar {
+    background-color: #919191;
+}
+
+.scroll-me> .scroll-element.scroll-draggable .scroll-bar {
+    background-color: #919191;
+}
+
+
+/* update scrollbar offset if both scrolls are visible */
+
+.scroll-me> .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track {
+    left: -12px;
+}
+
+.scroll-me> .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track {
+    top: -12px;
+}
+
+.scroll-me> .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {
+    left: -12px;
+}
+
+.scroll-me> .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
+    top: -12px;
+}

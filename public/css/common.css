@@ -1,0 +1,163 @@
+/***
+Common CSS. This is to be used by all the pages.
+***/
+
+a.sidebar-brand {
+    color: #FFF;
+}
+a,a:hover,a:focus{
+  color: #f1685b;
+  text-decoration: none;
+}
+.label-primary {
+    background-color: #f1685b;
+}
+body {
+    background: #F1F3FA;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Side Bar Menu */
+#sidebar-wrapper {
+    width: 250px;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+   /*  background: #1D232A;*/
+    height: 100%;
+    left: 220px;
+    margin-left: -220px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all 0.5s ease;
+    z-index: 1000;
+}
+
+.sidebar-nav .sidebar-brand {
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 5px;
+}
+a.btn-msg{
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 4px;
+  background: white;
+  margin: 10px;
+  color: #FFF;
+  font-size: 16px;
+  background-color: #f1685b;
+}
+.btn-msg > i {
+  padding: 5px;
+
+}
+/*
+.sidebar-brand> a {
+    color: #cfcfcf;
+    border-bottom: 1px solid #383839;
+}*/
+#sidebar-wrapper .sidebar-brand> a:hover, #sidebar-wrapper .sidebar-brand> a:active, #sidebar-wrapper .sidebar-brand> a:focus {
+    background-color: #1D232A;
+    color: white;
+}
+.sidebar-menu {
+    margin-top: 20px;
+}
+.sidebar-menu ul li a {
+    color: #a0a4a7;
+    font-size: 14px;
+    padding: 15px;
+}
+.sidebar-menu ul li a i {
+    margin-right: 8px;
+    font-size: 14px;
+}
+.sidebar-menu ul li a:hover {
+    /*  background-color: #fafcfd; */
+    background-color: inherit;
+    color: #fff;
+}
+.sidebar-menu ul li.active {
+    border-bottom: none;
+}
+.sidebar-menu ul li.active a {
+    color: #fff;
+    background-color: inherit;
+    border-left: 2px solid #f1685b;
+    /*background-color: #0e1319;*/
+}
+
+/* Main content */
+
+.main-content {
+    margin-left: 250px;
+}
+
+/* Common Header for logged in user */
+header.top-header {
+    background: #ffffff none repeat scroll 0 0;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.04);
+    display: inline-block !important;
+    line-height: 23px;
+    padding: 5px;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.top-header .search input {
+    border: none;
+    font-size: 15px;
+    padding: 20px 9px;
+    width: 100%;
+}
+.search .has-feedback {
+    position: relative;
+    top: 5px;
+    margin-bottom: 10px;
+}
+.search span.fa {
+  line-height: 2;
+  font-size: 18px;
+}
+.top-header .header-profile {
+    margin: 0;
+    padding-top: 2px;
+}
+.header-profile li {
+    display: inline-block;;
+    text-align: center;
+}
+.header-profile i {
+    color: #5a5b5d;
+}
+.header-profile i {
+    font-size: 18px;
+}
+.header-profile .icon-info {
+    position: relative;
+}
+.icon-info .label {
+    border: 2px solid #ffffff;
+    font-weight: 500;
+    padding: 3px 5px;
+    text-align: center;
+}
+.label.label-primary {
+    border-radius: 50%;
+    font-size: 9px;
+    left: 8px;
+    position: absolute;
+    top: -9px;
+}
+.header-profile img {
+    border-radius: 50%;
+    max-width: 48px !important;
+    width: 100%;
+  }

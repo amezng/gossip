@@ -1,0 +1,42 @@
+.theme-dark .sidebar {
+  background-color: #1D232A;
+}
+.theme-dark .sidebar-menu ul li.active a {
+  background-color: #0e1319;
+}
+.theme-dark .chat-msgs {
+  background-color:#0e1319;
+}
+.theme-light .sidebar{
+  background-color: #e7e7da;
+}
+
+.theme-light .sidebar-menu ul li.active a {
+  background-color:#ecece0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  color:#543f3e;
+}
+.theme-light .chat-msgs {
+  background-color:#ecece0;
+}
+.square{
+  height: 30px;
+  width:60px;
+  position: absolute;
+  top:10px;
+  left:10px;
+transition: all 0.5s ease 0s;
+transition-property: top,left;
+}
+.square >div {
+  height: 30px;
+  width:30px;
+}
+.square .dark{
+  background-color: #0e1319;
+
+}
+.square .light{
+  background-color: #ecece0;
+}
