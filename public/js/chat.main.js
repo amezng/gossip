@@ -20,14 +20,7 @@ $(document)
 
 					var chatDiv = $('.chat-msgs');
 					var chatht = chatDiv[0].scrollHeight;
-					console.log("Scroll height is " + chatht)
-					console.log("chat height is " + $('.chat-msgs').height());
-					// chatDiv.scrollTop(chatht);
 
-					/*chatDiv.animate({
-						"scrollTop" : chatht
-					}, "slow");
-*/
 					$("#chat-form").submit(
 							function(event) {
 								event.preventDefault ? event.preventDefault()
@@ -36,6 +29,16 @@ $(document)
 								chatSocket.send(message);
 								$('#chat-form')[0].reset();
 							});
+
+                    /* Handle the click on the post button */
+                    $('button.post').on('click',function(event){
+                    event.preventDefault ? event.preventDefault()
+                    										: (event.returnValue = false);
+                    var message = $("#chat-form input").val();
+                    chatSocket.send(message);
+                    $('#chat-form')[0].reset();
+
+                    });
 
 					chatSocket.onmessage = function(msg) {
 						console.log("received message : " + msg.data)
@@ -64,10 +67,6 @@ $(document)
 							.resize(
 									function() {
 										var chatDiv = $('.chat-msgs');
-										console.log("chat height on resize "
-												+ $('.chat-msgs').height());
-										console.log("chat scroll height is "
-												+ chatDiv[0].scrollHeight);
 										chatDiv
 												.animate(
 														{

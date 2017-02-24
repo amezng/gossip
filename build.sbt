@@ -12,18 +12,8 @@ import com.typesafe.sbt.packager.MappingsHelper._
 libraryDependencies ++= Seq(
 "com.mohiva" %% "play-silhouette" % "4.0.0-RC1",
 "com.mohiva" %% "play-html-compressor" % "0.6.2",
-  "com.mohiva" %% "play-silhouette-password-bcrypt" % "4.0.0-RC1",
-  "com.mohiva" %% "play-silhouette-persistence" % "4.0.0-RC1",
-  "com.mohiva" %% "play-silhouette-crypto-jca" % "4.0.0-RC1",
   "org.webjars" %% "webjars-play" % "2.5.0-2",
   "net.codingwell" %% "scala-guice" % "4.0.1",
-  "com.iheart" %% "ficus" % "1.2.6",
-  "com.adrianhurt" %% "play-bootstrap" % "1.0-P25-B3",
-  "com.mohiva" %% "play-silhouette-testkit" % "4.0.0-RC1" % "test",
-  "com.typesafe.play" %% "play-slick" % "2.0.0",
-  "com.typesafe.play" %% "play-slick-evolutions" % "2.0.0",
-  "org.postgresql" % "postgresql" % "9.4.1208.jre7",
-  "org.reactivemongo" %% "play2-reactivemongo" % "0.11.14",
   specs2 % Test,
   cache,
   filters
