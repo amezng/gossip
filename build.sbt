@@ -1,10 +1,10 @@
-name := """akka-chat"""
+name := """gossip"""
 
 version := "0.1-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.11.8"
 
 import com.typesafe.sbt.packager.MappingsHelper._
     mappings in Universal ++= directory(baseDirectory.value / "avatars")
@@ -19,7 +19,7 @@ libraryDependencies ++= Seq(
   filters
 )
 
-pipelineStages := Seq(rjs,uglify, digest, gzip)
+pipelineStages := Seq(uglify, digest, gzip)
 
 includeFilter in uglify := GlobFilter("public/assets/js/*.js")
 
@@ -32,7 +32,7 @@ resolvers += Resolver.sonatypeRepo("snapshots")
 resolvers += Resolver.jcenterRepo
 
 routesGenerator := InjectedRoutesGenerator
-
+//RjsKeys.mainConfig := "main"
 scalacOptions ++= Seq(
   "-deprecation", // Emit warning and location for usages of deprecated APIs.
   "-feature", // Emit warning and location for usages of features that should be imported explicitly.
